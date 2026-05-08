@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hide-scroller {
+  overflow: -moz-scrollbars-none; 
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.hide-scroller::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+/* Add to your global.css */
+@keyframes slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+@keyframes slide-out {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+.animate-slide-in {
+  animation: slide-in 0.5s ease-in-out;
+}
+
+.animate-slide-out {
+  animation: slide-out 0.5s ease-in-out;
+}
+/* styles/globals.css */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.star-hover {
+  animation: pulse 0.5s ease-in-out;
+}
+
+button[aria-label^="Rate"] {
+  transition: all 0.2s ease;
+  color: #fbbf24; /* amber-400 */
+}
+
+button[aria-label^="Rate"]:hover {
+  transform: scale(1.2);
+}

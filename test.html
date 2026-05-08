@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Reset</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+    .email-container {
+      max-width: 600px;
+      background: #fff;
+      margin: 40px auto;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .header {
+      background-color: #000;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .content {
+      padding: 30px;
+      color: #333;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #28a745;
+      color: #fff;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    .footer {
+      padding: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <div class="header">
+      <h2>Password Reset Request</h2>
+    </div>
+    <div class="content">
+      <p>Hello,</p>
+      <p>We received a request to reset your password. Click the button below to change your password:</p>
+      <a href="https://yourdomain.com/reset-password?token=UNIQUE_TOKEN" class="btn">Reset Password</a>
+      <p>If you didn’t request this, you can safely ignore this email.</p>
+      <p>Thanks,<br/>Zahid Pharmacy Team</p>
+    </div>
+    <div class="footer">
+      &copy; 2024 Zahid Pharmacy. All rights reserved.<br/>
+      <a href="mailto:support@zahidpharmacy.com">support@zahidpharmacy.com</a>
+    </div>
+  </div>
+</body>
+</html>
