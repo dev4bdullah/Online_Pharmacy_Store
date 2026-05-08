@@ -1,6 +1,6 @@
-# Zahid Pharmacy Store 🏥
+# Online Pharmacy Store 🏥
 
-Welcome to the **Zahid Pharmacy Store** project! This repository contains a fully functional, full-stack E-Commerce and Point of Sale (POS) web application designed specifically for pharmacies to manage their business online.
+Welcome to the **Online Pharmacy Store** project! This repository contains a fully functional, full-stack E-Commerce and Point of Sale (POS) web application designed specifically for pharmacies to manage their business online.
 
 ---
 
